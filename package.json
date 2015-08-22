@@ -1,0 +1,65 @@
+{
+  "name": "bind",
+  "version": "0.0.0-semantically-released",
+  "description": "Simple data binding for callbacks & HTML (also node.js compatible).",
+  "main": "lib/bind.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "karma start",
+    "build": "uglifyjs --mangle --compress -- lib/bind.js > dist/bind.min.js",
+    "test-node": "mocha test/*.test.js test/**/*.test.js",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madebyae/bind.git"
+  },
+  "author": {
+    "name": "Ae"
+  },
+  "license": "MIT",
+  "keywords": [
+    "data-binding",
+    "binding",
+    "engine",
+    "bind"
+  ],
+  "readmeFilename": "README.md",
+  "gitHead": "59b398e1007d41a41d8fb73a659b9fc4ba4fa20a",
+  "devDependencies": {
+    "browserify": "^10.0.0",
+    "browserify-istanbul": "^0.2.1",
+    "browserify-shim": "^3.8.6",
+    "chai": "^2.3.0",
+    "coveralls": "^2.11.2",
+    "karma": "^0.12.31",
+    "karma-browserify": "^4.1.2",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-cli": "0.0.4",
+    "karma-commonjs": "0.0.13",
+    "karma-coverage": "^0.2.6",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^1.0.2",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.2.4",
+    "semantic-release": "^3.3.1",
+    "sinon": "^1.14.1",
+    "uglify-js": "^2.4.20"
+  },
+  "readme": "",
+  "bugs": {
+    "url": "https://github.com/madebyae/bind/issues"
+  },
+  "homepage": "https://github.com/madebyae/bind",
+  "_id": "bind.js@0.0.0-semantically-released",
+  "_shasum": "98d512ca2dc1ac7ba703b5bc88300a61f1348fa4",
+  "_from": "git://github.com/madebyae/bind.git",
+  "_resolved": "git://github.com/madebyae/bind.git#c356fc3af1c693883b1e578ddd03031efc67efc7",
+  "_fromGithub": true
+}
